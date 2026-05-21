@@ -1,0 +1,23 @@
+{
+  "registry_id": "IQG_SOURCE_REGISTRY_v0.1",
+  "title": "MatVerse/IQG Living Source Registry",
+  "status": "STAGE_CANONIZATION",
+  "constitutional_chain": ["CanExist", "Validate", "Prove", "Execute", "Persist", "Replay"],
+  "sources": [
+    {"source_id":"MV-IQG-0001","title":"MatVerse como regime de existencia operacional","family":"F1_ONTOLOGY_DNA","status":"PASS_CANONICAL"},
+    {"source_id":"MV-IQG-0002","title":"IQG como organismo governado de saberes","family":"F1_ONTOLOGY_DNA","status":"PASS_CANONICAL"},
+    {"source_id":"MV-IQG-0003","title":"MNB como DNA causal","family":"F2_MNB_MEMORY_HERITAGE","status":"PASS_CANONICAL"},
+    {"source_id":"MV-IQG-0004","title":"Omega Gate como selecao epistemologica","family":"F4_GOVERNANCE_VALIDATION","status":"PASS_CANONICAL"},
+    {"source_id":"MV-IQG-0005","title":"Ledger e Replay como heranca e prova","family":"F2_MNB_MEMORY_HERITAGE","status":"PASS_LOCAL"},
+    {"source_id":"MV-IQG-0006","title":"SymbioIQG como superficie publica","family":"F5_SYMBIOIQG_BASE44_MMEN","status":"PASS_REPORTED"},
+    {"source_id":"MV-IQG-0007","title":"Backend causal v1","family":"F3_KERNEL_RUNTIME","status":"HOLD_BACKEND_BRIDGE_REQUIRED"},
+    {"source_id":"MV-IQG-0008","title":"ProofPack como produto publico minimo","family":"F6_PROOFPACK_PRODUCT","status":"PASS_PRODUCT_POSITION"},
+    {"source_id":"MV-IQG-0009","title":"Biological Omega Gate","family":"F8_HEALTH_BIOLOGICAL_GATE","status":"STAGE_POC"},
+    {"source_id":"MV-IQG-0010","title":"PoCW-MV / PoEW / PoSW","family":"F7_WORK_PROOFS","status":"PASS_CANONICAL"},
+    {"source_id":"MV-IQG-0011","title":"GTHDL","family":"F9_GTHDL_ENGINEERING","status":"PASS_CANONICAL"},
+    {"source_id":"MV-IQG-0012","title":"GTHDL-on-GHDL","family":"F9_GTHDL_ENGINEERING","status":"HOLD_SIMULATION_REQUIRED"},
+    {"source_id":"MV-IQG-0013","title":"EPV / Public Microscope","family":"F4_GOVERNANCE_VALIDATION","status":"STAGE"},
+    {"source_id":"MV-IQG-0014","title":"QTN / QeX","family":"F10_QTN_QEX_FRONTIER","status":"STAGE"},
+    {"source_id":"MV-IQG-0015","title":"TQE/TEF/VST e CMT","family":"F12_SPECULATIVE_RESEARCH","status":"HOLD"}
+  ]
+}
