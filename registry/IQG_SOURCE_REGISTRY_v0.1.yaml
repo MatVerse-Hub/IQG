@@ -1,0 +1,116 @@
+registry_id: IQG_SOURCE_REGISTRY_v0.1
+title: MatVerse/IQG Living Source Registry
+owner: Mateus A. Areas / MatVerse Institute
+status: STAGE_CANONIZATION
+purpose: Registrar e governar fontes, claims, artefatos, provas, produtos e frentes de pesquisa do corpus MatVerse/IQG.
+constitutional_chain:
+  - CanExist
+  - Validate
+  - Prove
+  - Execute
+  - Persist
+  - Replay
+families:
+  F1_ONTOLOGY_DNA: IQG, saber governavel, MatVerse como campo, MNB como DNA causal
+  F2_MNB_MEMORY_HERITAGE: MNB, memoria, heranca, ledger, replay, substrato binario
+  F3_KERNEL_RUNTIME: Kernel local, SuperOrganismo, backend v1, runtime constitucional
+  F4_GOVERNANCE_VALIDATION: ACOA, Omega Gate, claim hygiene, auditoria, EPV, replay externo
+  F5_SYMBIOIQG_BASE44_MMEN: UI publica, Base44, SymbioIQG, MMEN, Source Registry
+  F6_PROOFPACK_PRODUCT: ProofPack, evidence packs, produto publico minimo
+  F7_WORK_PROOFS: PoCW-MV, PoEW, PoSW, PoSE, PoLE e provas de trabalho causal
+  F8_HEALTH_BIOLOGICAL_GATE: Biological Omega Gate, homeostase, protecao humana, PoC observacional
+  F9_GTHDL_ENGINEERING: GTHDL, GTHDL-on-GHDL, HDL, logica digital simulavel
+  F10_QTN_QEX_FRONTIER: QTN, QeX, pos-quantico, simulacao quantico-classica
+  F11_MARKET_POSITIONING: valuation, Product Hunt, GTM, mercado, parcerias
+  F12_SPECULATIVE_RESEARCH: TQE/TEF/VST, CMT, computacao mineral, fronteiras fisicas
+sources:
+  - source_id: MV-IQG-0001
+    title: MatVerse como regime de existencia operacional
+    family: F1_ONTOLOGY_DNA
+    status: PASS_CANONICAL
+    claim_main: Informacao so ganha existencia operacional quando puder ser governada, provada, preservada e replayada.
+    next_action: Formalizar definicao publica curta e definicao tecnica longa.
+  - source_id: MV-IQG-0002
+    title: IQG como organismo governado de saberes
+    family: F1_ONTOLOGY_DNA
+    status: PASS_CANONICAL
+    claim_main: IQG nao e modelo; e organismo governado de saberes.
+    next_action: Fixar glossario tecnico.
+  - source_id: MV-IQG-0003
+    title: MNB como DNA causal
+    family: F2_MNB_MEMORY_HERITAGE
+    status: PASS_CANONICAL
+    claim_main: MNB e celula causal verificavel, nao mero registro.
+    next_action: Implementar schema e hashes separados.
+  - source_id: MV-IQG-0004
+    title: Omega Gate como selecao epistemologica
+    family: F4_GOVERNANCE_VALIDATION
+    status: PASS_CANONICAL
+    claim_main: Omega Gate decide persistencia, incubacao, promocao, bloqueio ou quarentena.
+    next_action: Separar policy engine local de claims publicos.
+  - source_id: MV-IQG-0005
+    title: Ledger e Replay como heranca e prova
+    family: F2_MNB_MEMORY_HERITAGE
+    status: PASS_LOCAL
+    claim_main: Ledger e heranca; replay e prova de continuidade.
+    next_action: Gerar replay_report.json reproduzivel.
+  - source_id: MV-IQG-0006
+    title: SymbioIQG como superficie publica
+    family: F5_SYMBIOIQG_BASE44_MMEN
+    status: PASS_REPORTED
+    claim_main: SymbioIQG materializa UI governavel, evidence pack, replay monitor e source registry.
+    next_action: Conectar UI ao backend causal v1.
+  - source_id: MV-IQG-0007
+    title: Backend causal v1
+    family: F3_KERNEL_RUNTIME
+    status: HOLD_BACKEND_BRIDGE_REQUIRED
+    claim_main: Criar endpoints minimos para MNB, Omega, Ledger, Replay e Evidence Pack.
+    next_action: Implementar FastAPI v1.
+  - source_id: MV-IQG-0008
+    title: ProofPack como produto publico minimo
+    family: F6_PROOFPACK_PRODUCT
+    status: PASS_PRODUCT_POSITION
+    claim_main: ProofPack transforma saida de IA em claims, decisoes, hashes, receipts e evidence packs.
+    next_action: Testar export real e redaction de segredos.
+  - source_id: MV-IQG-0009
+    title: Biological Omega Gate
+    family: F8_HEALTH_BIOLOGICAL_GATE
+    status: STAGE_POC
+    claim_main: Integridade humana vira variavel constitucional do runtime.
+    next_action: Rodar PoC observacional de 30 dias sem claims clinicos.
+  - source_id: MV-IQG-0010
+    title: PoCW-MV / PoEW / PoSW
+    family: F7_WORK_PROOFS
+    status: PASS_CANONICAL
+    claim_main: Trabalho valido e mudanca de estado util, admissivel, replayavel e herdavel.
+    next_action: Definir metricas minimas e exemplos.
+  - source_id: MV-IQG-0011
+    title: GTHDL
+    family: F9_GTHDL_ENGINEERING
+    status: PASS_CANONICAL
+    claim_main: GTHDL define criterios para investigar assinaturas operacionais de vida informacional.
+    next_action: Separar teoria, simulacao Python e GHDL.
+  - source_id: MV-IQG-0012
+    title: GTHDL-on-GHDL
+    family: F9_GTHDL_ENGINEERING
+    status: HOLD_SIMULATION_REQUIRED
+    claim_main: Trilha HDL para simular regras do Gate em logica digital deterministica.
+    next_action: Executar GHDL, gerar waveform, hashes e evidence pack.
+  - source_id: MV-IQG-0013
+    title: EPV / Public Microscope
+    family: F4_GOVERNANCE_VALIDATION
+    status: STAGE
+    claim_main: Replay interno prova continuidade local; replay externo prova observabilidade operacional.
+    next_action: Rodar replay multi-no independente.
+  - source_id: MV-IQG-0014
+    title: QTN / QeX
+    family: F10_QTN_QEX_FRONTIER
+    status: STAGE
+    claim_main: QTN/QeX organiza simulacao quantico-classica, pos-quantico e espacos de estado.
+    next_action: Separar PQC real de quantum fisico especulativo.
+  - source_id: MV-IQG-0015
+    title: TQE/TEF/VST e CMT
+    family: F12_SPECULATIVE_RESEARCH
+    status: HOLD
+    claim_main: Topologia semantica e computacao material sao programas de pesquisa, nao engenharia validada.
+    next_action: Rebaixar claims fisicos fortes e preservar como agenda exploratoria.
