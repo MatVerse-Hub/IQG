@@ -1,0 +1,79 @@
+# SUPER_ORGANISMO_IQG_V1.0.yaml
+version: "1.0"
+name: "SuperOrganismo IQG-MatVerse"
+generated: "2026-05-21"
+status: "active"
+constitution: "MatVerse + ACOA + SymbiOS + Ω-Gate"
+
+core:
+  brain: "MatVerse-Hub/IQG"
+  executor: "matverse-mcp-server"
+  arm: "GitHub MCP (42 tools)"
+  ledger: "CellLedger + MNBs"
+
+components:
+  repositories:
+    total: 71
+    registry_file: "IQG_SOURCE_REGISTRY_v0.2.yaml"
+    critical:
+      - MatVerse-py/matverse-mcp-server
+      - MatVerse-Hub/IQG
+      - MatVerse-Hub/symbiosV2
+      - matverse-acoa/core
+      - MatVerse-py/SuperKernel-6.0
+    governance: "Todas as ações passam por Ω-Gate"
+
+  agents:
+    total: "70+"
+    registry_file: "AGENT_REGISTRY_v0.1.yaml"
+    core_agents:
+      - name: GATE COPILOT
+        role: "Ω-Gate constitutional operator"
+        status_Ω: "core"
+      - name: Simbiotica Central Core
+        role: "Orquestrador multi-agente"
+        status_Ω: "core"
+      - name: Cassandra
+        role: "Auditoria técnica rigorosa"
+        status_Ω: "enabled"
+      - name: AgentSkill
+        role: "Skill creation & debug"
+        status_Ω: "enabled"
+
+  mcp_bridge:
+    server: "matverse-mcp-server"
+    github_mcp_url: "https://api.githubcopilot.com/mcp"
+    tools_exposed: 42
+    omega_gate: "mandatory"
+    endpoints:
+      - githubBridge
+      - agentRegister
+      - agentList
+      - record
+      - query
+      - audit-repair
+
+  external_witness:
+    zenodo: "Phase 3 - DOI para registries e releases"
+    ipfs: "Phase 3 - CID para MNBs e Ledger snapshots"
+    huggingface: "Phase 4 - Datasets de métricas Ω"
+    orcid: "Enabled - Vinculação de autoria"
+
+omega_gate:
+  mandatory: true
+  cv_threshold: 0.85
+  block_on:
+    - secret_leak
+    - constitution_violation
+    - high_risk_merge
+    - unverified_agent
+  log_level: "full"
+
+dashboard:
+  enabled: true
+  tech: "Vite + React + tRPC"
+  views:
+    - repo_health
+    - agent_status
+    - omega_gate_log
+    - ledger_metrics
