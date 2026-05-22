@@ -1,0 +1,142 @@
+# PLATFORM_WITNESS_REGISTRY_v0.1.yaml
+version: "0.1"
+name: "Platform Witness Registry"
+generated: "2026-05-21"
+status: "PASS_OBSERVED_TEXT"
+role: "Public identity, publication, repository, model, dataset, social and blockchain witness layer for the SuperOrganismo IQG-MatVerse."
+scope_note: "This registry records public presence and witness surfaces. It does not validate scientific claims, runtime execution, institutional closure, or production finality by itself."
+public_validation: "HOLD_EXTERNAL_REQUIRED"
+omega_gate_policy_ref: "omega_gate"
+
+identity_axis:
+  author_identity:
+    name: "Mateus A. Areas"
+    orcid: "0009-0008-2973-4047"
+    status: "PASS_OBSERVED_TEXT"
+    role: "human authorship and research identity anchor"
+  programmatic_identity:
+    names:
+      - "MatVerse"
+      - "MatVerse Institute"
+      - "QIG-Sigma"
+      - "IQG"
+    status: "PASS_OBSERVED_TEXT"
+    role: "programmatic identity namespace; not treated as legal entity without separate legal evidence"
+
+witnesses:
+  zenodo:
+    type: "publication_archive"
+    status: "PASS_OBSERVED_TEXT"
+    role: "archive layer for software, datasets, reports, preprints, working papers and execution artifacts"
+    observed_counts:
+      total_results: 80
+      open_access: 72
+      restricted: 7
+      other_or_draft: 1
+    examples:
+      - "MatVerse Canonical Map"
+      - "MatVerse Genesis Block"
+      - "MatVerse M3 Institutional Genesis Proof"
+      - "Proof of Execution Protocol"
+      - "MatVerse Paper 01-07 series"
+      - "Mem-Nano-Bit framework"
+    limitations:
+      - "Some entries are drafts, duplicates, restricted or incomplete."
+      - "Archive presence does not equal independent runtime validation."
+
+  orcid:
+    type: "researcher_identity"
+    status: "PASS_OBSERVED_TEXT"
+    role: "researcher identity and authorship linkage"
+    observed_works_count: 11
+    limitations:
+      - "Identity metadata does not validate execution."
+
+  huggingface:
+    type: "models_datasets_spaces"
+    status: "PASS_OBSERVED_TEXT"
+    role: "AI, dataset and public demo layer"
+    observed_namespace: "MatverseHub"
+    examples:
+      spaces:
+        - "mnb-memory-registry-space"
+        - "MNB Benchmark Observatory"
+        - "Symbios Proof"
+        - "Cassandra Organism"
+        - "MatVerse Publisher"
+      models:
+        - "matverse-organism"
+        - "matverse-core-embedder"
+      datasets:
+        - "ACOA"
+        - "symbios-core-dataset"
+        - "mnb-benchmark-ledger"
+    limitations:
+      - "Activity listings require API-level snapshot for exact reproducibility."
+
+  authorea:
+    type: "preprint_publication_search"
+    status: "PASS_OBSERVED_TEXT"
+    role: "academic preprint discovery layer"
+    observed_filter: "ContribAuthorRaw=Areas, Mateus"
+    observed_result_count: 3
+    observed_titles:
+      - "O ORGANISMO — A Consciência Distribuída"
+      - "The General Theory of Hamiltonian Digital Life (GTHDL)"
+      - "Antifragile Quantum-Semantic Systems via CVaR-POVM and Riemannian Memory Manifolds"
+    limitations:
+      - "Search result presence is a publication witness, not peer review or execution validation."
+
+  blockchain_testnets:
+    type: "public_testnet_activity"
+    status: "PASS_OBSERVED_TEXT"
+    role: "public transaction and anchoring experiment witness"
+    networks:
+      - name: "Ethereum Sepolia"
+        observed_transactions: 441
+        methods_observed:
+          - "Anchor"
+          - "Contract Creation"
+          - "Transfer"
+      - name: "Polygon Amoy"
+        observed_transactions: 25
+        methods_observed:
+          - "Anchor"
+          - "Contract Creation"
+          - "Transfer"
+    limitations:
+      - "Testnet activity proves public activity, not production finality or semantic validity."
+
+  linkedin:
+    type: "professional_social_presence"
+    status: "PASS_OBSERVED_TEXT"
+    role: "professional identity and public communication witness"
+    observed_headline: "Inovador Multidisciplinar (QIG-Sigma)"
+    observed_profile_city: "Sao Paulo region"
+    observed_posts:
+      - "Persistent agents and computational identity"
+      - "Omega-Gate compliance communication"
+    limitations:
+      - "Social presence supports public narrative, not technical validation."
+
+claim_hygiene:
+  pass_as_witness:
+    - "identity_presence"
+    - "publication_presence"
+    - "repository_or_dataset_presence"
+    - "blockchain_activity_presence"
+    - "professional_public_communication_presence"
+  blocked_without_extra_evidence:
+    - "institutional_closure"
+    - "truth_immutable"
+    - "public_runtime_validated"
+    - "distributed_quorum_validated"
+    - "legal_entity_status"
+    - "production_finality"
+
+next_required_artifacts:
+  - "ZENODO_DOI_REGISTRY_v0.1.yaml"
+  - "HF_ASSET_REGISTRY_v0.1.yaml"
+  - "BLOCKCHAIN_WITNESS_REGISTRY_v0.1.yaml"
+  - "AUTHOREA_PREPRINT_REGISTRY_v0.1.yaml"
+  - "ORCID_WORKS_REGISTRY_v0.1.yaml"
